@@ -20,6 +20,6 @@ export const todoSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = todoSlice.actions
+export const { add, remove} = todoSlice.actions
 
 export default todoSlice.reducer
