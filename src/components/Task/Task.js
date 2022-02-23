@@ -1,8 +1,15 @@
 import * as React from 'react';
+import {
+    useLocation
+  } from "react-router-dom";
+  
 export function Task() {
-     return (
-        <>
-            <h1>ikno</h1>
-        </>
-     );
+    const location=useLocation();
+    console.log(location);
+    return(
+        <div>
+            <h1>ID :{location.state?.id}</h1>
+            <p>{location.state?.title}</p>
+        </div>
+    );
 }
